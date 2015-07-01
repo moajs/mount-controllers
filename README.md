@@ -9,6 +9,6 @@
 ## Usages
 
 ```
-var $controllers = require('mount-controllers');
+var $controllers = require('mount-controllers')(__dirname);
 console.log($controllers);
 ```
