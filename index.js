@@ -1,12 +1,12 @@
 var requireDirectory = require('require-directory');
 
 function m(dir) {
-  var a = dir.split('app')  
+  var a = dir.split('node_modules')  
   
   if(a.length == 2){
     
   }else if(a.length !== 2){
-    a = dir.split('node_modules');
+    a = dir.split('app');
   }else{
     throw  "mount-controllers ERROR: " + dir + "里没有node_modules目录";
   }
